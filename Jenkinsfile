@@ -12,7 +12,7 @@ pipeline
     amiNameTagValue = "";
     thisTestNameVar = "";
     thisTestValue = "exploratory-testing";
-    ProjectName = "01-Build";
+    ProjectName = "FirstRun";
     fileProperties = "file.properties"
   }
 
@@ -23,7 +23,7 @@ pipeline
       steps {
         echo "Getting Exploratory Testing Repo"
         git(
-        url:'git@github.com:ochoadevops/exploratory-testing.git',
+        url:'git@github.com:rosserussell/exploratory-testing-master.git',
         credentialsId: 'exploratory-testing',
         branch: "master"
         )
